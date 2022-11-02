@@ -1,0 +1,111 @@
+nav a {
+
+    text-shadow: 0.5px 0.5px 0.5px rgb(126, 241, 149);
+
+}
+
+nav {
+    background: linear-gradient(to right, white, rgb(203, 246, 246), rgb(244, 226, 193), white);
+    box-shadow: 0px 2px 10px 2px rgb(8, 1, 7);
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 1.5px rgb(126, 241, 149);
+
+}
+
+#mainly::before {
+    content: "";
+    background: url('https://images.unsplash.com/photo-1594199679806-d543943615c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* calculator part */
+
+.c-body {
+    width: 40vw;
+    height: 76vh;
+    /* background-color: rgb(240, 240, 161); */
+    background-color: transparent;
+
+}
+
+.container-c {
+    text-align: center;
+
+
+}
+
+table {
+    margin: auto;
+    margin-top: 10px;
+}
+
+input {
+    font-size: 30px;
+    border-radius: 20px;
+    border: 3px solid rgb(6, 17, 6);
+    background-color: rgb(204, 190, 245);
+    padding: 5px 20px;
+
+
+}
+
+input::placeholder {
+    font: 18px sans-serif;
+    padding-left: 20px;
+}
+
+
+button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 5px 5px;
+    border-radius: 20px;
+  }
+  
+  button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.body1 {
+    display: inline-block;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
